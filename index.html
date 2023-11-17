@@ -9,11 +9,6 @@
             margin: 0;
             padding: 0;
           }
-      body {
-        background-color: black;
-        color: white;
-        font-family: "poppins", sans-serif;
-      }
       .nav {
         display: flex;
         width: 100%;
@@ -41,7 +36,7 @@
       }
 
         .ema::placeholder{
-          color: aliceblue;
+          color: rgb(153, 153, 153);
         }
 
         .tex h1{
@@ -65,7 +60,8 @@
         }
         .ema{
           background-color:rgba(0, 0, 0, 0.5);
-          border: 2 solid transparent;
+          border: 0.1px solid rgb(201, 199, 199);
+          outline: none;
           letter-spacing:1px;
           text-align:left;
           text-decoration:solid;
@@ -81,17 +77,12 @@
           position: absolute;
             top: 870px;
             left: 980px;
+            width: 24.5%;
+            z-index: 4;
         }
-
-        @media screen and (max-width : 480px){
-          .logo{
-              max-width: 190px;
-          }
-          .sect{
-            flex-direction: rows;
-          }
-          } 
-
+        .card button{
+          font-size: 28px;
+        }
         .container{
           display: flex;
           flex-wrap: wrap;
@@ -110,7 +101,37 @@
         .bord{
           border-bottom: 6px solid #232323 ;
         }
-
+        .quest{
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          background-color: rgb(29, 30, 31);
+        
+        }
+        #lst{
+          text-decoration: none;
+          color: aliceblue;
+          min-width:80rem;
+          text-align: left;
+          display: inline-block;
+        }
+        .last{
+            display:flex;
+            justify-content: space-around;
+            padding-top: 5%;
+            width: 100%;
+           
+            
+        }
+        .last ul li {
+          list-style:none;
+          padding-top: 8%;
+          
+        }
+        .last a{
+          color: rgb(182, 182, 182);
+      
+        }
     </style>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -119,14 +140,14 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-color: black">
+  <body style="background-color: black;font-family:sans-serif">
     <div class="flix-img ">
     <div class="container">
       <div class="nav">
          <span class="col">
              <img class="logo"
                src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
-             alt=""
+             alt="connect to internet"
              
              />
             </span>
@@ -156,7 +177,7 @@
                 </div>
         </span>
         <span class="column m me-5">
-            <button class="btn btn-danger">signin</button>
+            <button class="btn btn-danger" onclick="window.location.href='login.html'">sign In</button>
         </span>
     </div>
       </div>
@@ -182,7 +203,7 @@
         
           >
           <span class="p ps-3 ">
-            <button class="btn btn-danger "  style="width: 200%;"> <b> Get Started 
+            <button class="btn btn-danger "  style="width: 200%; font-size:150%;"> <b> Get Started 
               <svg width="24" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true" class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="ChevronRight" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg>
             </b> </button>
           </span>
@@ -204,7 +225,7 @@
 
     </div>
     <div class="pt2">
-      <img  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" >
+      <img  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png">
       <video id="video" autoplay loop>
       <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" type="video/mp4">
      
@@ -212,14 +233,13 @@
     </div>
   </div>
 </div>
- 
   <!-- this is second -->
 
   <div class="bord">
     <div class="container">
       <div class="pt2">
         <img  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" >
-        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" type="video/mp4"></video>
+        
       </div>
 
       <div class="pt1">
@@ -246,11 +266,11 @@
       </div>
       <div class="pt2">
         <img  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" >
-        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" type="video/mp4"></video>
+       
       </div>
     </div>
   </div>
-
+  
     <!-- forth -->
     <div class="bord">
       <div class="container">
@@ -272,11 +292,217 @@
     
         
       </div>
+<!-- fifth -->
+<div class="bord">
+<div class="container" style="padding-bottom: 10%;">
+  <DIv class="tex" style=" width:100%;padding-top:5%;"><h1 style="font-size: 40px;">Frequently Asked Questions</h1> </DIv>
+    
+    <div class="container" style="width: 100%;"></div>
+    <div class="accordion" id="accordionExample" style="font-size: 28px;" >
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+
+      <div class="card" style="background-color: #232323; width: 100%; margin-top:10px;">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0" style="min-width: max-content;" >
+            <button id="lst" class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              What is Netflix? <span style="float: right;"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="elj7tfr3 e164gv2o4 default-ltr-cache-l7vm9h e1svuwfo1" data-name="Plus" alt=""><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg></span> 
+            </button>
+          </h2>
+        </div>
+    
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body" style="color: aliceblue; width:100%;">
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more on thousands of internet-connected devices.
+            You can watch as much as you want, whenever you want, without a single ad all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card" style="background-color: #232323;margin-top:10px;">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button id="lst" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How much does Netflix cost?<span style="float: right;"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="elj7tfr3 e164gv2o4 default-ltr-cache-l7vm9h e1svuwfo1" data-name="Plus" alt=""><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg></span> 
+           
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body" style="color: aliceblue;width:100%;">
+            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card" style="background-color: #232323;margin-top:10px;">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button id="lst" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Where can I watch?<span style="float: right;"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="elj7tfr3 e164gv2o4 default-ltr-cache-l7vm9h e1svuwfo1" data-name="Plus" alt=""><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg></span> 
+           
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body" style="color: aliceblue;width:100%;">
+            Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+            <br>
+            You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+          </div>
+        </div>
+      </div>
+
+     
+
+      <div class="card" style="background-color: #232323;margin-top:10px;">
+        <div class="card-header" id="headingFour">
+          <h2 class="mb-0">
+            <button id="lst" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              How do I cancel?<span style="float: right;"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="elj7tfr3 e164gv2o4 default-ltr-cache-l7vm9h e1svuwfo1" data-name="Plus" alt=""><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg></span> 
+           
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+          <div class="card-body" style="color: aliceblue;width:100%;">
+            Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees  start or stop your account anytime.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="background-color: #232323;margin-top:10px;">
+        <div class="card-header" id="headingFive">
+          <h2 class="mb-0">
+            <button id="lst" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              What can I watch on netflix?<span style="float: right;"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="elj7tfr3 e164gv2o4 default-ltr-cache-l7vm9h e1svuwfo1" data-name="Plus" alt=""><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg></span> 
+           
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+          <div class="card-body" style="color: aliceblue; width:100%">
+            Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="background-color: #232323;margin-top:10px;">
+        <div class="card-header" id="headingSix">
+          <h2 class="mb-0">
+            <button id="lst" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Is Netflix good for kids?<span style="float: right;"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="elj7tfr3 e164gv2o4 default-ltr-cache-l7vm9h e1svuwfo1" data-name="Plus" alt=""><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg></span> 
+           
+            </button>
+          </h2>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix " data-parent="#accordionExample">
+          <div class="card-body" style="color: aliceblue;width:100%;">
+            The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.<br>
+            Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+          </div>
+        </div>
+      
+
+    </div>
+  
+</div>
+
+</div>
+
+<div class="tex">
+  <h1  style="font-size:110%;">Ready to watch? Enter your email to create or restart your membership.</h1>
+  <span style="display: flex; justify-content:centre; align-items:center;">
+    <div class="mb-3" style="display: flex; justify-content:centre; align-items:center;padding-left:30%; padding-top:1%; min-height:10px; width:60%">
+     
+      <input type="email" class=" ema" placeholder="Email Adress" ;
+      
+    
+      >
+      <span class="p ps-3 ">
+        <button class="btn btn-danger "  style="width: 200%;"> <b> Get Started 
+          <svg width="24" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true" class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="ChevronRight" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg>
+        </b> </button>
+      </span>
+</div>
+
+</div>
+  
+  
+
+</div>
+
+<!-- sixth -->
+<div class="board">
+<div class="container">
+  <span style="padding-left: 7.5%;padding-top:7%;color:aliceblue">Questions? Call 000-800-919-1694</span>
+<div class="last">
+
+<ul>
+  <li><a href="https://help.netflix.com/support/412">FAQ</a></li>
+  <li ><a href="http://ir.netflix.com/">Investor Relations</a></li>
+  <li ><a href="https://help.netflix.com/legal/privacy">Privacy</a></li>
+  <li ><a href="https://fast.com">Speed Test</a></li>
+  <li > <div class="dropdown m me-2 border border-white rounded " >
+    <button class="btn btn-dark dropdown-toggle"
+      type="button" style="color: aliceblue;"
+     data-bs-toggle="dropdown"
+     aria-expanded="false">
+     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="Languages" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path></svg> English
+     </button>
+    <ul class="dropdown-menu ">
+        <li>
+        <button class="dropdown-item" type="button">
+          English
+         </button>
+        </li>
+        <li>
+        <button class="dropdown-item" type="button">
+        Hindi
+        </button>
+         </li>
+    
+    </ul>
+    </div>
+  </li>
+  <li style="color: aliceblue;">Netflix India</li>
+</ul>
+<ul>
+  <li><a href="https://help.netflix.com">Help Centre</a></li>
+  <li ><a href="https://jobs.netflix.com/jobs">Jobs</a></li>
+  <li ><a href="#">Cookie Preferences</a></li>
+  <li ><a href="https://help.netflix.com/legal/notices">Legal Notices</a></li>
+</ul>
+  <ul>
+    <li ><a href="/youraccount">Account</a></li>
+    <li ><a href="/watch">Ways to Watch</a></li>
+    <li ><a href="https://help.netflix.com/legal/corpinfo">Corporate Information</a></li>
+    <li ><a href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a></li>
+  </ul>
+  <ul>
+      <li ><a href="https://media.netflix.com/">Media Centre</a></li>
+      <li><a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a></li>
+    <li ><a href="https://help.netflix.com/contactus">Contact Us</a></li>
+    
+  </ul>
+  
+
+</ul>
+
+<div>
+
+
+</div></div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
